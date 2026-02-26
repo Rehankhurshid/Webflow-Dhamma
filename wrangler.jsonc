@@ -1,21 +1,25 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "dhamma-portal",
-  "main": ".open-next/worker.js",
-  "compatibility_date": "2025-03-01",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "binding": "ASSETS",
-    "directory": ".open-next/assets"
-  },
-  "observability": {
-    "enabled": true
-  },
-  "kv_namespaces": [
-    {
-      "binding": "KV",
-      "id": "local-kv-placeholder",
-      "preview_id": "local-kv-placeholder"
-    }
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "dhamma-portal",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2025-03-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".open-next/assets"
+	},
+	"observability": {
+		"enabled": true
+	}
+	/**
+	 * KV Namespaces — add real KV binding via Webflow Cloud dashboard
+	 * Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#kv-namespaces
+	 */
+	// "kv_namespaces": [{ "binding": "KV", "id": "<real-kv-id-from-cloudflare>" }],
 }
