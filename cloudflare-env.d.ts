@@ -1,0 +1,18 @@
+interface CloudflareEnv {
+    KV: KVNamespace;
+    WEBFLOW_CMS_SITE_API_TOKEN: string;
+    WEBFLOW_API_HOST: string;
+    WEBFLOW_USE_LIVE: string;
+    WEBFLOW_INVESTORS_COLLECTION_ID: string;
+    WEBFLOW_DOCUMENTS_COLLECTION_ID: string;
+    WEBFLOW_ACCESS_LOGS_COLLECTION_ID: string;
+    WEBFLOW_OPTION_DII_ID: string;
+    WEBFLOW_OPTION_FII_ID: string;
+    WEBFLOW_OPTION_ACTIVE_ID: string;
+    WEBFLOW_OPTION_INACTIVE_ID: string;
+    SESSION_SECRET: string;
+    SESSION_HOURS: string;
+    SESSION_COOKIE_NAME: string;
+    LOGIN_MAX_ATTEMPTS: string;
+    LOGIN_WINDOW_MINUTES: string;
+}
